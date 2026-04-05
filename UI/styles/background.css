@@ -1,0 +1,88 @@
+/* AI Sahayak - Subtle Background Pattern 
+   Light, warm, professional design with subtle Indian rural theme elements 
+   Use as body background or section background
+   Compatible with Tailwind CSS */
+
+/* Base warm background */
+.bg-warm-base {
+  background-color: #faf7f4;
+}
+
+/* Subtle radial gradient overlay */
+.bg-subtle-mesh {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(160, 59, 0, 0.03) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(201, 76, 0, 0.03) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(160, 59, 0, 0.015) 0px, transparent 70%);
+  background-color: #faf7f4;
+}
+
+/* Hero section with sun glow effect */
+.bg-hero-section {
+  background: 
+    linear-gradient(180deg, 
+      rgba(255, 236, 210, 0.2) 0%, 
+      rgba(252, 182, 159, 0.05) 30%,
+      transparent 100%
+    ),
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 236, 210, 0.15) 0%, transparent 70%),
+    linear-gradient(180deg, #faf7f4 0%, #f9f4ef 100%);
+}
+
+/* Card background with subtle warm tint */
+.bg-card-warm {
+  background: linear-gradient(180deg, #ffffff 0%, #fefcfb 100%);
+}
+
+/* Section with wheat field subtle pattern */
+.bg-wheat-subtle {
+  background-color: #faf7f4;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='40' viewBox='0 0 100 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23a03b00' fill-opacity='0.04'%3E%3Cpath d='M10 40 Q12 30 15 20 Q18 30 20 40' stroke='%23a03b00' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='15' cy='18' r='1.5'/%3E%3Cpath d='M35 40 Q37 32 40 22 Q43 32 45 40' stroke='%23a03b00' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='40' cy='20' r='1.5'/%3E%3Cpath d='M60 40 Q62 28 65 18 Q68 28 70 40' stroke='%23a03b00' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='65' cy='16' r='1.5'/%3E%3Cpath d='M85 40 Q87 30 90 22 Q93 30 95 40' stroke='%23a03b00' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='90' cy='20' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Accent gradient bar */
+.bg-accent-bar {
+  background: linear-gradient(90deg, #a03b00 0%, #c94c00 50%, #e86a1a 100%);
+}
+
+/* Footer gradient */
+.bg-footer {
+  background: linear-gradient(180deg, #f5f5f5 0%, #f0f0f0 100%);
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Chat bubble gradient */
+.bg-chat-user {
+  background: linear-gradient(135deg, #a03b00 0%, #c94c00 100%);
+}
+
+.bg-chat-ai {
+  background-color: #f8f8f8;
+}
+
+/* Overlay for modals */
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+/* Glass effect for cards */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Subtle texture overlay */
+.bg-texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+venv/
+env/
+.venv/
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Audio temp files
+temp_audio/
+*.mp3
+*.wav
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+
+# Ruff cache
+.ruff_cache/
+
+# Mac
+__MACOSX/
