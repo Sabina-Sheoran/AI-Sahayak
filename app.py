@@ -136,10 +136,11 @@ async def get_tts_audio(filename: str):
 
 
 if __name__ == "__main__":
+    import sys
+    sys.stdout.reconfigure(encoding='utf-8')
+    print("SabbiAI - AI Livelihood Assistant")
     print("=" * 50)
-    print("🌾 SabbiAI - AI Livelihood Assistant")
-    print("=" * 50)
-    print("🌾 SabbiAI running at http://localhost:8000")
+    print("SabbiAI running at http://localhost:8000")
     print("   Home:       http://localhost:8000")
     print("   Eligibility: http://localhost:8000/eligibility")
     print("   Schemes:    http://localhost:8000/schemes")
